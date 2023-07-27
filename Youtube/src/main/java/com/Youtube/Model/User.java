@@ -10,6 +10,8 @@ import com.fasterxml.jackson.annotation.JsonProperty.Access;
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -70,12 +72,18 @@ public class User {
 	@JsonIgnore
 	private List<Video> likedVideos=new ArrayList<>();
 	
-	@OneToMany
+	@OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
 	@JsonIgnore
-	private List<Video> playList=new ArrayList<>();
+	private List<PlayLists> playList=new ArrayList<>();
 	
 	@OneToMany
 	@JsonIgnore
 	private List<Video> History=new ArrayList<>();
+	
+	
+
+    @Enumerated(EnumType.STRING)
+    @Column(columnDefinition = "ENUM('YES', 'NO') DEFAULT 'NO'")
+    private IsDeleted isdeleted = IsDeleted.NO;
 	
 }
