@@ -2,6 +2,28 @@
 
 Welcome to the documentation for the YouTube web services project. This project is built using Java, Spring Boot, RESTful web services, and MySQL, and it provides various features for managing videos, user authentication, and more.
 
+## Project Description
+
+The YouTube web services project is a feature-rich platform that allows users to upload, view, interact with, and manage video content. Whether you're a content creator looking to share your videos or an avid viewer seeking engaging content, this platform has you covered. Key features include:
+
+- **User Registration and Login:** Create an account or log in to access personalized features and engage with the community.
+- **Video Management:** Upload, update, and delete videos with ease. Watch videos seamlessly with an optimized video player.
+- **Engagement Features:** Like and comment on videos, fostering discussions and interactions.
+- **Content Sharing:** Share your favorite videos with friends and social networks.
+- **User Profile Management:** Customize your profile, update your information, and maintain a curated library of uploaded videos.
+
+## Tech Stack
+
+The project utilizes the following technologies:
+
+- **Java:** The core programming language for building the application logic.
+- **Spring Boot:** A framework that simplifies the development of robust and scalable web applications.
+- **RESTful Web Services:** The architectural style for designing networked applications, providing flexibility and scalability.
+- **MySQL:** A relational database management system for efficient data storage and retrieval.
+
+These technologies collectively form the foundation of the platform, ensuring its reliability, performance, and security. The tech stack enables seamless user experiences, efficient data management, and scalable infrastructure for accommodating user growth.
+
+
 ## Table of Contents
 
 1. [Authentication](#authentication)
